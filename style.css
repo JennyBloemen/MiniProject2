@@ -1,0 +1,77 @@
+:root {
+    --main-color: purple;
+    --border-radius: 5px;
+}
+* {
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    background-color:gray;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+main {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 2%;
+}
+.main-header{
+    display:flex
+    justify-content: space-between
+    text-align: center;
+    padding: 20px;
+    color:var(--main-color);
+    }
+h1 {
+    font-size: 36px;
+}
+p{
+    color: white;
+    margin: 10px;
+}
+.card {
+    border: 1px dashed white;
+    color: var(--main-color);
+    margin:  40px 40px;
+    
+    flex: 1 0 300px;
+    text-align: left;
+    padding: 15px
+}
+.card header {
+    padding:5px;
+    font-size: 24px;
+    border: 1px solid white;
+    border-radius: var(--border-radius);
+    position: realtive;
+    Flex-direction: row;
+    margin-top: -30px;
+    background-color:gray ;
+}
+.fade {
+    color: white;
+    background-color: purple;
+    text-indent: 5px; 
+    border-radius: 8px;
+    background-image: linear-gradient(
+    rgba(224, 204, 224, 0.3)20%
+    rgba(128, 0, 128, 0.3)100%);
+}
+footer {
+    padding: 30px;
+    clear: both;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    color: var(--main-color);
+    border: none;
+}
+footer h2 {
+    font-size: 24px;
+}
+@media screen and (max-width: 768px) {
+  main,
+  nav {
+    flex-direction: column;
+  }
+}
